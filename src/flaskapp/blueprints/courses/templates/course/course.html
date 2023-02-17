@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block head %}{% include "course/includes/head.html" %}{% endblock head %}
+
+{% block pagination -%}
+{% set pagination_previous_url = pagination.previous if pagination else None -%}
+{% set pagination_back_url = pagination.back if pagination else None -%}
+{% set pagination_next_url = pagination.next if pagination else None -%}
+{% include 'includes/nav/pagination.html' %}
+{%- endblock pagination %}
+
+{% block content -%}
+
+<main>
+    <section id="module-info">
+        <h1>{{ course_info.title if course_info.title else "Course"}}</h1>
+        <div id="module-description">{{ course_info.description | safe }}</div>
+    </section>
+
+    <section id="topics">
+        <h2>Topics:</h2>
+        {%- for t in topics %}
+        <article class="topic">
+            <button type="button" class="accordion">
+                <h3 class="topic-title">{{ t.title }}</h3>
+            </button>
+            <div class="panel">
+                <div>{{ t.description | safe }}</div>
+                <ul class="subtopics">
+                    {%- set parent_loop = loop %}
+                    {%- for s in t.subtopics %}
+                    {%- set endpoint = 'courses.lesson' if s.type == 'lesson' else 'courses.exercise' %}
+                    {%- set url = url_for( endpoint, id1=course_info.id, id2=t.id, id3=s.id) %}
+                    <li>
+                        <a class="subtopic {{ s.type }}" href="{{ url }}">
+                            <span class="subtopic-type">{{ s.type | capitalize }} {{ parent_loop.index }}.{{ loop.index }}</span>
+                            <span class="subtopic-title" >{{ s.title }}</span>
+                        </a>
+                    </li>
+                    {%- endfor %}
+                </ul>
+            </div>
+        </article>
+        {%- endfor %}
+    </section>
+</main>
+
+{%- endblock content %}

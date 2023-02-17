@@ -1,0 +1,42 @@
+{% extends 'phishing_quiz/layout.html' %}
+
+{% block head %}{% include "phishing_quiz/includes/head_email.html" %}{% endblock head %}
+
+{% block message -%}
+
+<div id="phi-email">
+    <div id="phi-header">
+        <div id="phi-header-summary">
+            <img id="from-img" src="/static/img/logo_redondo.png" alt="Profile image">
+            <div id="phi-header-text">
+                <div id="from-text" class="selectionable" tabindex="0">
+                    <span id="from-name">{{ dto.from_name if dto }}</span>
+                    <span id="from-email">&lt; {{ dto.from_email if dto }} &gt;</span>
+                </div>
+                <p>to me <button id="details-button" type="button">Details</button></p>
+            </div>
+            <span id="time">00:00</span>
+        </div>
+        <ul id="phi-header-details">
+            <li id="details-from" class="phi-header-detail selectionable" tabindex="0">
+                <span class="details-field">from:</span>
+                <span class="details-value"></span>
+            </li>
+            <li id="details-to" class="phi-header-detail selectionable" tabindex="0">
+                <span class="details-field">to:</span>
+                <span class="details-value">Me</span>
+            </li>
+            <li id="details-date" class="phi-header-detail selectionable" tabindex="0">
+                <span class="details-field">date:</span>
+                <span class="details-value"></span>
+            </li>
+            <li id="details-subject" class="phi-header-detail selectionable" tabindex="0">
+                <span class="details-field">subject:</span>
+                <span  class="details-value"></span>
+            </li>
+        </ul>
+    </div>
+    <div id="phi-body"></div>
+</div>
+
+{%- endblock %}

@@ -1,0 +1,14 @@
+{% extends 'head.html' %}
+
+{% block title -%}Password Checker | {{ super() }}{% endblock title %}
+
+{% block style -%}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('password_checker.static', filename='css/password_checker.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('password_checker.static', filename='css/password_table.css') }}">
+{%- endblock style %}
+
+{% block scripts -%}
+{{ super() }}
+<script src="{{ url_for('password_checker.static', filename='js/password_checker.js') }}"></script>
+{%- endblock scripts %}

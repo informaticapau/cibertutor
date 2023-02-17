@@ -1,0 +1,11 @@
+{% extends 'subtopic/layout.html' %}
+
+{% block head %}{% include "subtopic/includes/head-lesson.html" %}{% endblock head %}
+
+{% block subtopic_content -%}
+
+<article id="content">
+    {{ dto.content | safe }}
+</article>
+
+{%- endblock subtopic_content %}

@@ -1,0 +1,15 @@
+<header>
+    <!-- Warnings and messages -->
+    <div id="messages">
+        <noscript class="message">This application requires JavaScript to function properly. Please, activate it.</noscript>
+    </div>
+
+    <!-- Header Bar -->
+    <div id="header-bar">
+        <a href="{{ url_for('home.index') }}">
+            <img id="logo" src="{{ url_for('static', filename='img/logo_redondo.png') }}" alt="Logo">
+        </a>
+        <a id="webname" href="{{ url_for('home.index') }}">CiberTutor</a>
+        <button type="button" id="nav-menu-icon">&#9776;</button>
+    </div>
+</header>

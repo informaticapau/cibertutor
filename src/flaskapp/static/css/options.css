@@ -1,0 +1,106 @@
+:root {
+    --color-bg: #202020;
+    --font-family: Consolas, "Times New Roman", times, roman, serif;
+    --font-size: normal;
+}
+
+.options {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: space-around;
+    
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.option {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 1vw;
+}
+
+.option-link {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    border: 3px solid black;
+    border-radius: 0.5em;
+    
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.option-link:link, 
+.option-link:visited {
+    color: white;
+    background: #303030;
+}
+
+.option-link:hover,
+.option-link:focus {
+    background: black;
+    box-shadow: 0em 0em 0.2em 0.1em white;
+}
+
+.option-link:active {
+    color: darkgrey;
+    background: var(--color-bg);;
+    box-shadow: 0em 0em 0.2em 0.1em darkgrey;
+}
+
+.option-link .option-img {
+    box-sizing: border-box;
+    width: 15%;
+    border: 3px solid green;
+    border-radius: 50%;
+
+    background-color: green;
+}
+
+.option-link .option-name {
+    box-sizing: border-box;
+    width: 85%;
+
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+@media screen and (min-width: 1000px) {
+
+    .options {
+        flex-flow: row wrap;
+    }
+
+    .option {
+        box-sizing: border-box;
+        width: 15vw;
+        height: 15vw;
+        margin: 1vw;
+    }
+
+    .option-link {
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+
+    .option-link .option-img {
+        box-sizing: border-box;
+        width: 50%;
+    }
+    
+    .option-link .option-name {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+}

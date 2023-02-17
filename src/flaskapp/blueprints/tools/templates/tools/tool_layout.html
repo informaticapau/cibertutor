@@ -1,0 +1,7 @@
+{% extends 'layout.html' %}
+
+{% block pagination -%}
+    {% set pagination_back_url = url_for('tools.index') -%}
+    {% set pagination_back_text = 'Tools' -%}
+    {% include 'includes/nav/back.html' %}
+{%- endblock pagination %}

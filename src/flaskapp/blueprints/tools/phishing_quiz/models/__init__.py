@@ -1,0 +1,1 @@
+from .phishingemail import PhishingEmail

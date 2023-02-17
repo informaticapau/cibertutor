@@ -1,0 +1,27 @@
+#presentation {
+    text-align: justify;
+    color: white;
+}
+
+#links {
+    margin-top: 15px;
+}
+
+.link {
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 150px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 0.5em;
+    margin-bottom: 5px;
+
+    text-decoration: none;
+    color: white;
+    background: blue;
+}
+
+.link:active {
+    background: cornflowerblue;
+}

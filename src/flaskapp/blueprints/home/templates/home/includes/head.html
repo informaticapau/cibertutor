@@ -1,0 +1,8 @@
+{% extends 'head.html' %}
+
+{% block title -%}Home | {{ super() }}{% endblock title %}
+
+{% block style -%}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('home.static', filename='css/home.css') }}">
+{%- endblock style %}

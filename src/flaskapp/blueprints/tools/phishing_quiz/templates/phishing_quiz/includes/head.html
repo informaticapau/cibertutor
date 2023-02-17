@@ -1,0 +1,11 @@
+{% extends 'head.html' %}
+
+{% block style -%}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('phishing_quiz.static', filename='css/phishing_quiz.css') }}">
+{%- endblock style %}
+
+{% block scripts -%}
+{{ super() }}
+<script src="{{ url_for('phishing_quiz.static', filename='js/phishing_quiz.js') }}"></script>
+{%- endblock scripts %}

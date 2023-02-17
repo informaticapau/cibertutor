@@ -1,0 +1,13 @@
+<ol id="pagination-links" class="all-links">
+    {% if pagination_previous_url -%}
+    <li id="pagination-previous"><a class="pagination-link" href="{{ pagination_previous_url }}">&lt; Previous</a></li>
+    {%- else -%}
+    <li id="pagination-previous"><a class="pagination-link disabled" href="#">&lt; Previous</a></li>
+    {%- endif %}
+    <li id="pagination-back"><a class="pagination-link" href="{{ pagination_back_url }}">Back</a></li>
+    {% if pagination_next_url -%}
+    <li id="pagination-next"><a class="pagination-link" href="{{ pagination_next_url }}">Next &gt;</a></li>
+    {%- else -%}
+    <li id="pagination-next"><a class="pagination-link disabled" href="#">Next &gt;</a></li>
+    {%- endif %}
+</ol>

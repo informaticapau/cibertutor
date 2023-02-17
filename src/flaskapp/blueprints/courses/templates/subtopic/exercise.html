@@ -1,0 +1,24 @@
+{% extends 'subtopic/layout.html' %}
+
+{% block head %}{% include "subtopic/includes/head-exercise.html" %}{% endblock head %}
+
+{% block subtopic_content -%}
+
+<article>
+    <section id="content">
+        {{ dto.content | safe }}
+    </section>
+
+    <section id="exercise">
+        {% if dto.style == 'test' %}
+        {%- for answer in dto.answers -%}
+        <button type="button"  id="answer{{loop.index0}}" class="answer {{ 'solution' if answer.is_solution else '' }}">
+           <span>{{ answer.content | safe }}</span>
+        </button>
+        {% endfor -%}
+        <button type="button" id="check_answers">Check</button>
+        {%- endif %}
+    </section>
+</article>
+
+{%- endblock subtopic_content %}

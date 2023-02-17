@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block head %}{% include "courses/includes/head.html" %}{% endblock head %}
+
+{% block content -%}
+
+<main>
+    <section>
+        <h1>Courses</h1>
+        <ul class="options">
+            {%- for c in courses %}
+            <li class="option">
+                <a class="option-link" href="{{ url_for('courses.course', id1=c.id) }}" title="Go to course: {{ c.title }}">
+                    <img class="option-img" src="{{c.icon}}" />
+                    <span class="option-name">{{ c.title }}</span>
+                </a>
+            </li>
+            {%- endfor %}
+        </ul>
+    </section>
+</main>
+
+{%- endblock content %}

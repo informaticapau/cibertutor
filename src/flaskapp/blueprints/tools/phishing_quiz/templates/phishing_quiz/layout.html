@@ -1,0 +1,70 @@
+{% extends 'tools/tool_layout.html' %}
+
+{% block content -%}
+
+<main>
+    <section>
+        <h1>Phishing Quiz</h1>
+        <p id="description">This feature is a quiz that tests your ability to 
+            identify phishing attempts in emails. You will be presented with a 
+            series of emails and you have to decide whether they are legitimate 
+            or not. Select the sentences in the email that you think indicate a 
+            phishing attempt. If you select a sentence that is marked as a 
+            "solution" you will be considered correct, otherwise you will be 
+            considered wrong. As you go through the quiz, you will learn about 
+            the tactics and techniques used by attackers to trick you into 
+            giving away your personal information.</p>
+
+        <form id="phi-user-info" class="hidden" name="phi-user-info" method="post" autocomplete="off" onsubmit="return false">
+            <p>
+                Enter a name and email (they don't have to be real).
+                These are only to enhance the sense of reality and will not be used or sent outside of your device.
+            </p>
+
+            <label for="phi-user-name">Name:</label>
+            <input type="text" id="phi-user-name" name="phi-user-name" placeholder="John Doe" required>
+            <br>
+
+            <label for="phi-user-email">Email:</label>
+            <input type="email" id="phi-user-email" name="phi-user-email" placeholder="johndoe@email.com" required>
+            <br>
+
+            <button form="phi-user-info" type="submit">Submit</button>
+            <button id="cancel-button" class="hidden"  type="button">Cancel</button>
+        </form>
+        <button id="change-data" class="hidden" type="button">Change user data.</button>
+        <br>
+
+        <div id="quiz-container" class="hidden">
+            <button id="start-quiz" class="phi-button hidden">Start quiz</button>
+            <div id="phi-quiz" class="hidden">
+
+
+                {% filter indent(width=12) -%}
+                {% block message -%}{%- endblock %}
+                {%- endfilter %}
+
+                <div id="phi-buttons">
+                    <button id="check-phishing" class="phi-button" type="button">Check Phishing</button>
+                    <button id="mark-legit" class="phi-button active" type="button">Mark as legit</button>
+                </div>
+
+                <p id="phi-comment" class="hidden">
+                    <span id="phi-comment-status"></span>
+                    <span id="phi-comment-message"></span>
+                </p>
+                
+                <div id="continue-buttons" class="hidden">
+                    <button id="next-button" class="phi-button active" type="button">Continue</button>
+                    <button id="show-score-button" class="phi-button active hidden" type="button">Show score</button>
+                </div>
+            </div>
+            <div id="quiz-score" class="hidden">
+                <h2>You finished the quiz!</h2>
+                <p>Your score is: <span id="score"></span>/<span id="questions"></span></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+{%- endblock content %}

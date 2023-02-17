@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block pagination -%}
+{% set pagination_previous_url = pagination.previous if pagination else None -%}
+{% set pagination_back_url = pagination.back if pagination else None -%}
+{% set pagination_next_url = pagination.next if pagination else None -%}
+{% include 'includes/nav/pagination.html' %}
+{%- endblock pagination %}
+
+{% block content -%}
+
+<main>
+    <section id="subtopic">
+        <h1>{{ dto.title if dto.title else "Subtopic"}}</h1>
+        {% filter indent(width=8) -%}
+        {% block subtopic_content %}{% endblock subtopic_content %}
+        {%- endfilter %}
+    </section>
+</main>
+
+{%- endblock content %}

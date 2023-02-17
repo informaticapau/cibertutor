@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block head %}{% include 'tools/includes/head.html' %}{% endblock head %}
+
+{% block content -%}
+
+<main>
+    <section>
+        <h1>Tools</h1>
+        <ul class="options">
+            {% for tool in tools -%}
+            <li class="option">
+                <a class="option-link" href="{{ tool.url }}" title="Go to tool: {{ tool.name }}">
+                    <img class="option-img" src="{{ tool.img_url }}" />
+                    <span class="option-name">{{ tool.name }}</span>
+                </a>
+            </li>
+            {% endfor -%}
+        </ul>
+    </section>
+</main>
+
+{%- endblock content %}

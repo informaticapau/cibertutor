@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block head %}{% include "home/includes/head.html" %}{% endblock head %}
+
+{% block content -%}
+<main>
+    <h1>Hello User!</h1>
+    <p id="presentation">In a world where technology is becoming more and more a part of our lives, the danger
+        posed by cyberthreats to which we could be exposed is growing. Knowing how to prevent and
+        act against them is crucial to avoid becoming the victim of cybercriminals. Good practices and
+        general knowledge on how to act in cyberspace should be more widely disseminated to the
+        population, especially to those who do not have sufficient technical knowledge of Information
+        and Communications Technology (ICT). This work aims to provide a tool to raise awareness
+        by bringing them concepts, good practices and practical scenarios to reflect on.</p>
+    
+    <div id="links">
+        <a id="show-courses" class="link" href="{{ url_for('courses.courses') }}" title="Go to: Courses">Learn!</a>
+        <a id="show-tools" class="link" href="{{ url_for('tools.index') }}" title="Go to: Tools">Practice!</a>
+    </div>
+</main>
+{%- endblock content %}

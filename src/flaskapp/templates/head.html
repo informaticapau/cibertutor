@@ -1,0 +1,26 @@
+<head>
+    <!-- Meta info -->
+    {% filter indent(width=4) -%}
+    {% block meta -%}
+    {% include "includes/head/meta.html" %}
+    {%- endblock %}
+    {%- endfilter %}
+
+    <!-- Favicon & title -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo_redondo.png') }}">
+    <title>{% block title %}CiberTutor{% endblock %}</title>
+
+    <!-- Style -->
+    {% filter indent(width=4) -%}
+    {% block style -%}
+    {% include "includes/head/style.html" %}
+    {%- endblock %}
+    {%- endfilter %}
+
+    <!-- Scripts -->
+    {% filter indent(width=4) -%}
+    {% block scripts -%}
+    {% include "includes/head/scripts.html" %}
+    {%- endblock %}
+    {%- endfilter %}
+</head>

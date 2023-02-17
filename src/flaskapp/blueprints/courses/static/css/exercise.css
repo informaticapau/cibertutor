@@ -1,0 +1,118 @@
+:root {
+    --answer-padding: 10px;
+}
+
+#exercise {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.answer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: var(--answer-padding);
+    border: 3px solid black;
+    border-radius: 0.5em;
+    margin-bottom: 10px;
+
+    color: #ffffff;
+    background: #404040;
+
+    cursor: pointer;
+}
+
+.answer:hover, 
+.answer:focus {
+    background: #000000;
+    box-shadow: 0em 0em 0.2em 0.1em #FFFFFF;
+}
+
+.answer:active {
+    color: #909090;
+    background: var(--color-bg);;
+    box-shadow: 0em 0em 0.2em 0.1em #909090;
+}
+
+.answer.active {
+    background: blue;
+    box-shadow: 0em 0em 0.2em 0.1em #FFFFFF;
+}
+
+.answer.solution.checked {
+    color: white;
+    background: green;
+}
+
+.answer.checked {
+    color: white;
+    background: red;
+}
+
+.answer::before,
+.answer::after {
+    display: inline-block;
+
+    width: 5%;
+
+    content: "";
+}
+
+.answer.solution.checked::before,
+.answer.solution.checked::after {
+    content: "\02705"; /* Check Emoji */
+}
+
+.answer.checked::before,
+.answer.checked::after  {
+    content: "\0274C"; /* Cross Emoji */
+}
+
+.answer > span {
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 90%;
+
+    text-align: center;
+}
+
+#check_answers {
+    display: block;
+    
+    width: fit-content;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 0.5em;
+    margin: 0 auto;
+
+    color: white;
+    background: grey;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+#check_answers.active {
+    background: blue;
+}
+
+#check_answers.active:active {
+    background: cornflowerblue;
+}
+
+#message {
+    display: none; /* Modified with JavaScript */
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: var(--answer-padding);
+    border: 3px solid black;
+    border-radius: 0.5em;
+    margin-bottom: 10px;
+}

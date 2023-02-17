@@ -1,0 +1,63 @@
+#description {
+    text-align: justify;
+}
+
+#phi-user-info p {
+    text-align: justify;
+}
+
+#start-quiz {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.selectionable {
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.selectionable.active {
+    outline: 2px solid red;
+}
+
+.selectionable:not(.active):hover {
+    outline: 2px solid blue;
+}
+ 
+.selectionable:not(.active):focus {
+    outline-color: blue;
+}
+
+#phi-buttons {
+    margin-top: 15px;
+}
+
+.phi-button {
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 150px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 0.5em;
+    margin-bottom: 5px;
+
+    text-decoration: none;
+    color: white;
+    background: grey;
+}
+
+.phi-button.active {
+    background: blue;
+
+    cursor: pointer;
+}
+
+.phi-button.active:active {
+    background: cornflowerblue;
+}
+
+.hidden {
+    display: none; /* Modified with JavaScript*/
+}
