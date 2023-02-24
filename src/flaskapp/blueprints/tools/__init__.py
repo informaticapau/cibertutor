@@ -5,7 +5,7 @@ bp: Blueprint = Blueprint('tools', __name__, url_prefix='/tools',
 
 
 __tool_list: list[dict] = [
-    ('Phishing Quiz - Emails', 'phishing_quiz', 'email'),
+    ('Phishing Quiz - Emails', 'phishing_quiz', 'email', 'img/icon.png'),
     ('Password Checker', 'password_checker', 'password_checker', 'img/icon.png'),
 ]
 
