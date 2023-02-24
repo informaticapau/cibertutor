@@ -40,4 +40,7 @@ def create_app(test_config: dict = None) -> Flask:
     from .utils import db_cli
     app.cli.add_command(db_cli)
 
-    return app
+    with app.app_context():
+        if os.getenv('FLASK_DB_INIT') == 'True':
+            db.create_all()
+        return app
