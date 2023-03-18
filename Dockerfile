@@ -5,6 +5,7 @@ COPY ./data/ /opt/TFG/data/
 
 WORKDIR /opt/TFG/src/
 RUN pip install --no-cache-dir pipenv \
+    && python3 -m pipenv lock \
     && python3 -m pipenv requirements > requirements.txt \
     && pip install --no-cache-dir -r requirements.txt \
     && touch .env \
