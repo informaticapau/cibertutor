@@ -1,0 +1,81 @@
+title: Introduction to Cybersecurity
+description: An overview of what cybersecurity is and why it's important.
+ordinal: 1
+topics:
+  - title: Password Security
+    description: Tips for creating strong and unique passwords, including the use of special characters and length.
+    ordinal: 1
+    lessons:
+    - title: Introduction to Strong Passwords
+      ordinal: 1
+      content: >-
+        Passwords are the most common form of authentication, but weak passwords can be easily cracked. 
+        To create a strong password, it is important to use a mix of uppercase and lowercase letters, numbers, and special characters.
+        Avoid using personal information or common words.
+    - title: How to Create Strong Passwords
+      ordinal: 2
+      content: >-
+        To create a strong password, it is important to use a mix of uppercase and lowercase letters, numbers, and special characters. 
+        For example, instead of using "password123" use "P@ssw0rd123!". Also, avoid using personal information or common words.
+    - title: Password Managers
+      ordinal: 3
+      content: >-
+        A password manager is a software that stores and encrypts your passwords, allowing you to create unique and complex passwords for each of your online accounts without the need to remember them. 
+        They also alert you when a website you use has been hacked.
+    - title: Two-Factor Authentication
+      ordinal: 4
+      content: >-
+        Two-Factor Authentication is an extra layer of security that requires not only a password, but also something that only the user has, such as a mobile device. 
+        This can be a text message or a call to a phone number, or an app that generates a code.
+        It makes it much harder for an attacker to gain access to your account because they would need to have possession of your mobile device.
+    - title: Phishing Awareness
+      ordinal: 5
+      content: >-
+        Phishing is a technique used by cybercriminals to trick you into providing sensitive information, such as login credentials or financial information.
+        It's important to be aware of the methods used in phishing attempts, such as emails or messages that ask you to click on a link or provide personal information.
+        Always be suspicious of unsolicited messages and never click on links or enter personal information unless you are certain that the request is legitimate.
+    - title: Public WiFi Security
+      ordinal: 6
+      content: >-
+        Public WiFi networks can be convenient, but they are also a security risk.
+        When connected to a public WiFi network, your device is vulnerable to hacking, phishing and other cyber attacks.
+        To protect yourself when using public WiFi, avoid using it for sensitive transactions, such as online banking or shopping.
+        Use a VPN to encrypt your connection and use your mobile network instead if possible.
+    - title: Keeping your Software Up-to-date
+      ordinal: 7
+      content: >-
+        Software vendors release updates and patches to fix known security vulnerabilities.
+        By keeping your software up-to-date, you can protect your device from these vulnerabilities and potential attacks.
+        Make sure to regularly check for updates for your operating system, web browsers, and other software you use.
+        Enable automatic updates if possible.
+    exercises:
+  - title: Social Engineering
+    description: Explanation of what social engineering is and common techniques used by attackers.
+    ordinal: 2
+    lessons:
+      - title: Understanding Social Engineering
+        ordinal: 1
+        content: >-
+          Social engineering is the use of psychological manipulation and 
+          deception to trick people into giving up sensitive information or 
+          performing actions that could lead to a security breach. Common 
+          techniques include phishing, baiting, and pretexting.
+      - title: Phishing Scams
+        ordinal: 2
+        content: >-
+          Phishing is a type of social engineering attack in which an 
+          attacker attempts to trick a user into providing sensitive information 
+          or performing an action by disguising themselves as a trustworthy 
+          source. This can include emails, text messages, and phone calls. 
+          
+          It's important to be suspicious of unsolicited requests for personal 
+          information and to verify the identity of the sender before 
+          responding.
+      - title: Spear Phishing
+        ordinal: 3
+        content: >-
+          Spear phishing is a targeted form of phishing that is directed at 
+          specific individuals or organizations. It's important to be cautious 
+          of requests for personal information or action from unknown 
+          individuals, especially if they contain personal information.
+    exercises:

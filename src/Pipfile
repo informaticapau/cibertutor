@@ -10,6 +10,7 @@ python-dotenv = "*"
 pyyaml = "*"
 click = "*"
 markdown = "*"
+gunicorn = "*"
 
 [dev-packages]
 pytest = "*"
@@ -17,4 +18,4 @@ lorem-text = "*"
 coverage = "*"
 
 [requires]
-python_version = "3.10"
+python_version = "3.9"

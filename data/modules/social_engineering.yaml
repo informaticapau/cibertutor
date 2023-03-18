@@ -1,0 +1,18 @@
+title: Phishing Scams
+ordinal: 3
+description: This module covers how to recognize and avoid phishing scams.
+icon: icon_phishing.png
+topics:
+  - title: What is Phishing?
+    ordinal: 1
+    description: This topic covers the basics of phishing scams, including how they work and common tactics used by attackers.
+    lessons:
+      - title: Understanding Phishing
+        ordinal: 1
+        content: Phishing is a type of cyber attack in which a fraudster attempts to trick you into giving away personal information, such as passwords or credit card numbers, by disguising themselves as a trustworthy source. 
+      - title: How to Spot Phishing Scams
+        ordinal: 2
+        content: To spot a phishing scam, be wary of unsolicited emails or messages. Be suspicious of any message asking for personal information or to click on a link. Be especially cautious of any message that urges you to act quickly.
+      - title: How to Avoid Phishing Scams
+        ordinal: 3
+        content: To avoid phishing scams, do not click on links in suspicious emails or messages. Instead, type the website address directly into your browser. If you are unsure if a message is legitimate, contact the organization directly through a phone number or email address you know to be valid.

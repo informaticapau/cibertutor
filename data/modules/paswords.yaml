@@ -1,0 +1,56 @@
+title: Password Security
+ordinal: 2
+description: This module covers the importance of strong, unique passwords and best practices for creating and managing them.
+icon: icon_passwords.png
+topics:
+  - title: Why Strong Passwords Matter
+    ordinal: 1
+    description: This topic explains why strong, unique passwords are essential for protecting your online accounts and personal information.
+    lessons:
+      - title: The Importance of Strong Passwords
+        ordinal: 1
+        content: >- 
+          Weak and easily guessed passwords are one of the most common ways 
+          that cybercriminals gain access to online accounts. By using 
+          strong, unique passwords for each of your accounts, you can greatly 
+          reduce the chances of your personal information being compromised.
+      - title: How to Create Strong Passwords
+        ordinal: 2
+        content: >- 
+          To create a strong password, use a combination of upper and 
+          lowercase letters, numbers, and special characters. Avoid using 
+          easily guessed information, such as your name or birthdate. Also, 
+          make sure your password is at least 12 characters long.
+    exercises:
+      - title: Select the safest password
+        ordinal: 2
+        style: test
+        content: "Select the safest password:"
+        answers:
+          - content: "1234"
+            is_solution: false
+          - content: "password"
+            is_solution: false
+          - content: "Str0ng_Passw0rd"
+            is_solution: true
+
+  - title: Password Managers
+    ordinal: 2
+    description: This topic covers the benefits of using a password manager and how to use one effectively.
+    lessons:
+      - title: What is a Password Manager?
+        ordinal: 1
+        content: A password manager is a tool that helps you generate and store strong, unique passwords for all of your online accounts. These tools can also automatically fill in login forms for you and alert you to potential security issues.
+      - title: How to Use a Password Manager
+        ordinal: 2
+        content: To use a password manager, start by creating a master password that will be used to encrypt and secure all of your other passwords. Then, add all of your online accounts to the password manager and let it generate unique, strong passwords for each one. Be sure to regularly update your passwords and review your list of accounts for any that you no longer use or trust.
+  - title: Two-Factor Authentication
+    ordinal: 3
+    description: This topic covers the benefits of using Two-Factor Authentication and how to set it up for your online accounts.
+    lessons:
+      - title: What is Two-Factor Authentication?
+        ordinal: 1
+        content: Two-factor authentication (2FA) is a security method that requires not only a password and username but also something that only the user has on them, such as a fingerprint or a code sent to their phone.
+      - title: How to set up Two-Factor Authentication
+        ordinal: 2
+        content: To set up two-factor authentication, check if the service you want to protect offers this feature. If it does, you can usually enable it in the security settings of your account. Depending on the service, you might be able to use an app like Google Authenticator or Authy, or receive a text message with a code, as the second factor.

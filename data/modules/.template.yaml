@@ -1,0 +1,12 @@
+title: Título del Module. Un Module es un conjunto de temas relacionados.
+description: Título del Module.
+ordinal: Índice del Module para especificar el orden. Es un entero.
+topics:
+  - title: Título de un Topic.
+    description: Tips for creating strong and unique passwords, including the use of special characters and length.
+    ordinal: Índice del Topic para especificar el orden. Es un entero.
+    lessons:
+    - title: Título de una Lesson.
+      ordinal: Índice de la Lesson para especificar el orden. Es un entero.
+      content: >-
+        Texto explicativo que enseña al usuario un concepto relacionado con el tema.

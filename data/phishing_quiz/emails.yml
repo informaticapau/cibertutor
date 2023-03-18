@@ -1,0 +1,69 @@
+- from_name: "Paypal Support"
+  from_email: "support@paypal.com"
+  subject: "Your account has been locked"
+  content: >-
+    <span class="selectionable">Dear <span class="username">customer</span>,</span><br>
+    <span class="selectionable solution">We have detected suspicious activity on your Paypal account and it has been locked for your security.</span><br>
+    <span class="selectionable solution">Please click on the following link to unlock your account:</span><br>
+    <span class="selectionable solution"><a href="http://fraudulent-site.com">Unlock account</a></span><br>
+    <span class="selectionable">Sincerely,</span><br>
+    <span class="selectionable">The Paypal Team</span>
+  comment: "The email contains a suspicious link that leads to a fraudulent site."
+  phishing_location: "content"
+
+- from_name: "Apple Support"
+  from_email: "support@apple.com"
+  subject: "Your Apple ID is about to expire"
+  content: >-
+    <span class="selectionable">Dear <span class="username">customer</span>,</span><br>
+    <span class="selectionable solution">Your Apple ID is about to expire.</span><br>
+    <span class="selectionable solution">Please click <a href="http://fraudulent-site.com">here</a> to renew your account and avoid service interruption.</span><br>
+    <span class="selectionable">Sincerely,</span><br>
+    <span class="selectionable">The Apple Support Team</span>
+  comment: "The email contains a suspicious link that leads to a fraudulent site."
+  phishing_location: "content"
+
+- from_name: "LinkedIn Support"
+  from_email: "support@linkedin.com"
+  subject: "Your LinkedIn account has been compromised"
+  content: >-
+    <span class="selectionable">Dear <span class="username">customer</span>,</span><br>
+    <span class="selectionable">We have detected suspicious activity on your LinkedIn account.</span><br>
+    <span class="selectionable">For your security, please click <a href="http://legit-site.com">here</a> to update your password and restore access to your account.</span><br>
+    <span class="selectionable">Sincerely,</span><br>
+    <span class="selectionable">The LinkedIn Support Team</span>
+  comment: "The email contains a legitimate link to a secure site."
+  phishing_location: null
+
+- from_name: "Paypal Support Team <script>alert('Phishing')</script>"
+  from_email: "support@paypal.com"
+  subject: "Your account has been locked"
+  content: >-
+    <span class='selectionable'>Dear <span class="username">customer</span>,</span> <br>
+    <span class='selectionable'>we have detected suspicious activity on your Paypal account and it has been locked for your security.</span> <br>
+    <span class='selectionable'>Please click on the following link to unlock your account: https://www.paypal.com/</span> <br>
+    <span class='selectionable'>Sincerely, The Paypal Team</span>
+  comment: "The email contains a script tag in the from name field, indicating a phishing attempt"
+  phishing_location: "from_name"
+
+- from_name: "Paypal Support Team"
+  from_email: "supp0rt@paypal.com"
+  subject: "Your account has been locked"
+  content: >-
+    <span class='selectionable'>Dear <span class="username">customer</span>,</span> <br>
+    <span class='selectionable'>we have detected suspicious activity on your Paypal account and it has been locked for your security.</span> <br>
+    <span class='selectionable'>Please click on the following link to unlock your account: https://www.paypal.com/</span> <br>
+    <span class='selectionable'>Sincerely, The Paypal Team</span>
+  comment: "The email contains a zero instead of the letter 'o' in the from email field, indicating a phishing attempt"
+  phishing_location: "from_email"
+
+- from_name: "Paypal Support Team"
+  from_email: "support@paypal.com"
+  subject: "Urgent: Confirm your account information"
+  content: >-
+    <span class='selectionable'>Dear <span class="username">customer</span>,</span> <br>
+    <span class='selectionable'>we have detected suspicious activity on your Paypal account and it has been locked for your security.</span> <br>
+    <span class='selectionable'>Please click on the following link to unlock your account: https://www.paypal.com/</span> <br>
+    <span class='selectionable'>Sincerely, The Paypal Team</span>
+  comment: "The email contains a subject that urges the recipient to take immediate action, which is a common tactic used in phishing emails"
+  phishing_location: "subject"
