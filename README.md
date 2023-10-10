@@ -9,7 +9,7 @@
 [![CSS3](https://img.shields.io/badge/CSS_3-white?logo=css3&logoColor=white&labelColor=grey&color=%231572B6)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-white?logo=javascript&logoColor=white&label=%20&labelColor=grey&color=%23F7DF1E)](#)
 [![SQLite](https://img.shields.io/badge/SQLite-white?logo=sqlite&logoColor=white&label=%20&labelColor=grey&color=%23003B57)](<https://www.sqlite.org/> "SQLite")
-[![Flask](https://img.shields.io/badge/flask-white?logo=flask&logoColor=white&labelColor=grey&color=%233CACBC)](<https://flask.palletsprojects.com/> "Flask")
+[![Flask](https://img.shields.io/badge/Flask-white?logo=flask&logoColor=white&labelColor=grey&color=%233CACBC)](<https://flask.palletsprojects.com/> "Flask")
 [![jQuery](https://img.shields.io/badge/jQuery-white?logo=jquery&logoColor=white&label=%20&labelColor=grey&color=%230769AD)](<https://jquery.com/> "jQuery")
 [![Docker](https://img.shields.io/badge/Docker-white?logo=docker&logoColor=white&labelColor=grey&color=%232496ED)](<https://www.docker.com/> "Docker")
 
@@ -28,12 +28,13 @@
   - [Install](#install)
   - [Contributing](#contributing)
   - [License](#license)
+  - [Contact](#contact)
 
 ## About
 
 In an increasingly digital world, the need for comprehensive cybersecurity awareness has never been greater. As the internet continues to shape our daily lives, the risks associated with cyber threats loom larger than ever before. In response to this growing concern, we present "Cibertutor," a cutting-edge application designed to foster cybersecurity consciousness among individuals and organizations.
 
-#### Key Features:
+### Key Features:
 
 - **Educational Insights**: Cibertutor offers a dedicated section providing users with in-depth information on cybersecurity risks, offering invaluable insights into the evolving landscape of cyber threats. Users can access relevant resources and best practices for safeguarding their digital lives.
 - **Interactive Learning**: The application goes beyond conventional cybersecurity tutorials by offering immersive, interactive scenarios and utilities. Through these engaging features, users can gain practical experience in dealing with simulated cyber threats, empowering them to make informed decisions and mitigate risks effectively.
