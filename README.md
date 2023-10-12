@@ -70,6 +70,8 @@ Contributions are welcome! If you have improvements, bug fixes, or new modules t
 
 The content of this repository is licensed under the [MIT License](LICENSE).
 
+Dependencies and their licences are specified inside the [NOTICE](NOTICE) file.
+
 ## Contact
 
 Feel free to get in touch with me!

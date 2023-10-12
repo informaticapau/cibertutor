@@ -1,0 +1,12 @@
+Lists of third-party dependencies.
+    (BSD-3-Clause License) Click (click - https://click.palletsprojects.com/en/8.1.x/license/)
+    (BSD-3-Clause License) Flask (flask - https://flask.palletsprojects.com/en/3.0.x/license/)
+    (BSD-3-Clause License) Flask-SQLAlchemy (flask_sqlalchemy - https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/license/)
+    (MIT License) Gunicorn (gunicorn - https://github.com/benoitc/gunicorn/blob/master/LICENSE)
+    (MIT License) Pipenv (pipenv - https://github.com/pypa/pipenv/blob/main/LICENSE) 
+    (BSD-3-Clause License) Python-Markdown (markdown - https://github.com/Python-Markdown/markdown/blob/master/LICENSE.md)
+    (BSD-3-Clause License) Python-dotenv (python-dotenv - https://saurabh-kumar.com/python-dotenv/license/)
+    (MIT License) PyYAML (yaml - https://github.com/yaml/pyyaml/blob/main/LICENSE)
+
+    (MIT License) jQuery (jquery-3.6.1.min.js - https://jquery.org/license/)
+    (MIT License) jQuery Cookie (jquery.cookie-1.4.1.min.js - https://plugins.jquery.com/cookie)
