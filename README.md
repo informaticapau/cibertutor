@@ -49,12 +49,12 @@ This application is avaliable at <https://cibertutor.informaticapau.com/>.
 
 A [Dockerfile](Dockerfile) is provided if you want to deploy the project yourself.
 
-If you want to run the application inside your own host you can follow this steps:
+If you want to run the application inside your own host, you can follow this steps:
 
 1. Clone the respository.
 2. [ Optional ] Create an virtual environment.
    - Create a directory `.venv` inside the `src/` directory.
-3. Install the dependecies from `src/Pipfile`.
+3. Install the dependencies from `src/Pipfile`.
    - `pipenv install` can be used to install them inside the virtual environment.
 4. Create a `.env` file with the following content:
    - `PHISHING_QUIZ_EMAILS="path/to/file/phishing_quiz/emails.yml"`
@@ -70,7 +70,7 @@ Contributions are welcome! If you have improvements, bug fixes, or new modules t
 
 The content of this repository is licensed under the [MIT License](LICENSE).
 
-Dependencies and their licences are specified inside the [NOTICE](NOTICE) file.
+Dependencies and their licenses are specified inside the [NOTICE](NOTICE) file.
 
 ## Contact
 
