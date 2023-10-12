@@ -24,6 +24,7 @@
 - [Cibertutor](#cibertutor)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
+    - [Key Features](#key-features)
   - [Usage](#usage)
   - [Install](#install)
   - [Contributing](#contributing)
@@ -34,7 +35,7 @@
 
 In an increasingly digital world, the need for comprehensive cybersecurity awareness has never been greater. As the internet continues to shape our daily lives, the risks associated with cyber threats loom larger than ever before. In response to this growing concern, we present "Cibertutor," a cutting-edge application designed to foster cybersecurity consciousness among individuals and organizations.
 
-### Key Features:
+### Key Features
 
 - **Educational Insights**: Cibertutor offers a dedicated section providing users with in-depth information on cybersecurity risks, offering invaluable insights into the evolving landscape of cyber threats. Users can access relevant resources and best practices for safeguarding their digital lives.
 - **Interactive Learning**: The application goes beyond conventional cybersecurity tutorials by offering immersive, interactive scenarios and utilities. Through these engaging features, users can gain practical experience in dealing with simulated cyber threats, empowering them to make informed decisions and mitigate risks effectively.
@@ -48,13 +49,24 @@ This application is avaliable at <https://cibertutor.informaticapau.com/>.
 
 A [Dockerfile](Dockerfile) is provided if you want to deploy the project yourself.
 
+If you want to run the application inside your own host you can follow this steps:
+
+1. Clone the respository.
+2. [ Optional ] Create an virtual environment.
+   - Create a directory `.venv` inside the `src/` directory.
+3. Install the dependecies from `src/Pipfile`.
+   - `pipenv install` can be used to install them inside the virtual environment.
+4. Create a `.env` file with the following content:
+   - `PHISHING_QUIZ_EMAILS="path/to/file/phishing_quiz/emails.yml"`
+   - `MODULES_DATA_FOLDER="path/to/modules/directory"`
+5. Run the app to check that it works with `flask run`.
+6. Use a production WSGI server like [`gunicorn`](<https://github.com/benoitc/gunicorn> "Gunicorn").
+
 ## Contributing
 
 Contributions are welcome! If you have improvements, bug fixes, or new modules to add, feel free to submit a pull request.
 
 ## License
-
-### Project License
 
 The content of this repository is licensed under the [MIT License](LICENSE).
 
