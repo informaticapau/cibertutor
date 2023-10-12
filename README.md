@@ -27,6 +27,8 @@
     - [Key Features](#key-features)
   - [Usage](#usage)
   - [Install](#install)
+    - [Docker](#docker)
+    - [Python Virtualenv](#python-virtualenv)
   - [Contributing](#contributing)
   - [License](#license)
   - [Contact](#contact)
@@ -47,9 +49,32 @@ This application is avaliable at <https://cibertutor.informaticapau.com/>.
 
 ## Install
 
-A [Dockerfile](Dockerfile) is provided if you want to deploy the project yourself.
+If you want to deploy the application yourself, you can either do it using Docker, or you can run it directly on a Python virtual environment.
 
-If you want to run the application inside your own host, you can follow this steps:
+### Docker
+
+There is a Docker Hub image you can pull and run directly:
+
+```bash
+docker run -d -p "8000:8000" --name cibertutor \
+   informaticapau/cibertutor:latest
+```
+
+By default, the application listens on port 8000 but of course this can be changed to whichever port you like.
+
+If you want to build the image yourself, a [Dockerfile](Dockerfile) is provided as well. You can do that by pulling the repository and starting the build process:
+
+```bash
+git clone https://github.com/informaticapau/cibertutor
+cd cibertutor
+docker build -t cibertutor .
+```
+
+And then run it using the previous command.
+
+### Python Virtualenv
+
+If you want to run the application inside your own host, you can follow these steps:
 
 1. Clone the respository.
 2. [ Optional ] Create an virtual environment.
