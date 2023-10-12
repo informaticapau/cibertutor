@@ -1,3 +1,4 @@
 __pycache__
 src/.env
 src/instance
+src/Pipfile.lock
